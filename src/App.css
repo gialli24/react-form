@@ -1,0 +1,7 @@
+@import url('bootstrap');
+@import "bootstrap-icons/font/bootstrap-icons";
+
+/* Reset */
+img {
+  max-width: 100%;
+}
