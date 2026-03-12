@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Article from "./Article";
 
 export default function AppMain({ articles }) {
 
@@ -19,9 +20,7 @@ export default function AppMain({ articles }) {
         <main>
             {
                 articlesList.map((article, index) => (
-                    <article key={index}>
-                        <h2>{article.title}</h2>
-                    </article>
+                    <Article key={index} article={article} />
                 ))
             }
 
