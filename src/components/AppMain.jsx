@@ -53,7 +53,7 @@ export default function AppMain({ articles }) {
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                         {
                             articlesList.map((article, index) => (
-                                <Article key={index} article={article} deleteArticle={deleteArticle} index={index} />
+                                <Article key={index} article={article} deleteArticle={deleteArticle} index={index} articlesList={articlesList} setArticlesList={setArticlesList} />
                             ))
                         }
                     </div>
