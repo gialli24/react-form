@@ -10,7 +10,8 @@ export default function AppMain({ articles }) {
         e.preventDefault();
 
         const newArticle = {
-            title: newTitle
+            title: newTitle,
+            image: "https://picsum.photos/400/300?random=1"
         };
 
         setArticlesList([newArticle, ...articlesList]);
